@@ -9,6 +9,16 @@
   "author": "Victor Veytsman",
   "license": "MIT",
   "dependencies": {
-    "qdb-api-plus": "^1.1.1"
-  }
+    "minimist": "^1.2.0",
+    "qdb-api-plus": "^1.4.5"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vityavv/qdb-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vityavv/qdb-cli/issues"
+  },
+  "homepage": "https://github.com/vityavv/qdb-cli#readme"
 }
