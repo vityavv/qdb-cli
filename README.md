@@ -1,5 +1,7 @@
 # qdb-cli
 
+[![NPM](https://nodei.co/npm/qdb-cli.png)](https://nodei.co/npm/qdb-cli/)
+
 `qdb-cli`, the sister project of [`qdb-api-plus`](https://github.com/vityavv/qdb-api-plus), is a command line interface for the quote database on [bash.org](http://bash.org)
 
 ## How to use
