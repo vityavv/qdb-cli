@@ -4,6 +4,7 @@ let argv = require("minimist")(process.argv.slice(1), {
 	boolean: ["id", "i", "hide-score", "n", "over0", "o", "byNumber", "b"],
 });
 let helptext = require("./help.js");
+if (argv.h || argv.help) console.log(helptext);
 if (argv._[0].startsWith("/")) {
 	argv._.shift();
 }
