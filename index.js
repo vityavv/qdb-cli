@@ -1,12 +1,12 @@
+#!/usr/bin/env node
 let qdb = require("qdb-api-plus");
 let argv = require("minimist")(process.argv.slice(1), {
 	boolean: ["id", "i", "hide-score", "n", "over0", "o", "byNumber", "b"],
 });
-let helptext = "";
+let helptext = require("./help.js");
 if (argv._[0].startsWith("/")) {
 	argv._.shift();
 }
-console.log(argv);
 let options = {
 	id: argv.i || argv.id,
 	score: !(argv.n || argv["hide-score"]),
@@ -35,6 +35,8 @@ switch (command) {
 			process.exit(1);
 		}
 		qdb.search(argv._[1], argv._[2], options.byNumber).then(showQuotes).catch(console.error);
+		break;
+	case "help":
 	default:
 		console.log(helptext);
 }

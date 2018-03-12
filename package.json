@@ -8,6 +8,9 @@
   },
   "author": "Victor Veytsman",
   "license": "MIT",
+	"bin": {
+		"qdb": "./index.js"
+	},
   "dependencies": {
     "minimist": "^1.2.0",
     "qdb-api-plus": "^1.4.5"
